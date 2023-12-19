@@ -3,7 +3,7 @@ import json
 class Queue():
     def __init__(self) -> None:
         self.queue = []
-        self.file_path = ".\\project\\music_player\\fixed\\Playlist.json"
+        self.file_path = ".\\Playlist.json"
         
         with open(self.file_path, 'r+') as file:
             self.data = json.load(file)
